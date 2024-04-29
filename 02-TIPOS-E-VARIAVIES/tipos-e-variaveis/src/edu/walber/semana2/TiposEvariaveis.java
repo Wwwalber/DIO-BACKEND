@@ -7,7 +7,7 @@ public class TiposEvariaveis {
         System.out.println(numero);
         
         // teste de variável constante
-        double VALOR_DE_PI = 3.14;
+        final double VALOR_DE_PI = 3.14;
         VALOR_DE_PI = 14;
     }
 }
