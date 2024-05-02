@@ -8,7 +8,7 @@ public class Operadores2 {
 
         System.out.println(numero);
 
-        numero = + numero;
+        numero = -1 * numero;
 
         System.out.println(numero);
     }
