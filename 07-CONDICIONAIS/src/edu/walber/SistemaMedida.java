@@ -14,11 +14,11 @@ public class SistemaMedida {
 		}
 		case "M":{
 			System.out.println("MÉDIO");
-			//break;
+			break;
 		}
 		case "G":{
 			System.out.println("GRANDE");
-			//break;
+			break;
 		}
 		default:
 			System.out.println("INDEFINIDO");
