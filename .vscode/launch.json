@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AboutMeScanner",
+            "request": "launch",
+            "mainClass": "edu.walber.AboutMeScanner",
+            "projectName": "DIO-BACKEND_17b8f3f5"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -23,7 +30,12 @@
             "request": "launch",
             "mainClass": "edu.walber.AboutMe",
             "projectName": "DIO-BACKEND_17b8f3f5",
-            "args": ["WALBER", "COSTA", "48", "1.82"]
+            "args": [
+                "WALBER",
+                "COSTA",
+                "48",
+                "1.82"
+            ]
         },
         {
             "type": "java",
