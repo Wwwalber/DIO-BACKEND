@@ -1,0 +1,36 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "DIO-BACKEND_17b8f3f5"
+        },
+        {
+            "type": "java",
+            "name": "AboutMe",
+            "request": "launch",
+            "mainClass": "edu.walber.AboutMe",
+            "projectName": "DIO-BACKEND_17b8f3f5",
+            "args": ["WALBER", "COSTA", "48", "1.82"]
+        },
+        {
+            "type": "java",
+            "name": "MInhaClasse",
+            "request": "launch",
+            "mainClass": "edu.walber.MInhaClasse",
+            "projectName": "DIO-BACKEND_17b8f3f5"
+        }
+    ]
+}
