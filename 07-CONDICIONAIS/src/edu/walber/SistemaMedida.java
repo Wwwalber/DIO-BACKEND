@@ -1,16 +1,28 @@
 package edu.walber;
 
-public class SistemaMedida {
-    public static void main(String[] args) {
-        String sigla = "A";
+// SistemaMedida.java
 
-		if(sigla == "P")
+// Modo condicional switch / case
+public class SistemaMedida {
+	public static void main(String[] args) {
+		String sigla = "M";
+
+		switch (sigla) {
+		case "P":{
 			System.out.println("PEQUENO");
-		else if(sigla == "M")
+			break;
+		}
+		case "M":{
 			System.out.println("MÉDIO");
-		else if(sigla == "G")
+			break;
+		}
+		case "G":{
 			System.out.println("GRANDE");
-		else
-			System.out.println("INDEFINIDO"); 
-    }
+			break;
+		}
+		default:
+			System.out.println("INDEFINIDO");
+		}
+	}
 }
+
