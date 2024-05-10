@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "edu.walber.primeirasemana.App",
+            "projectName": "DIO-BACKEND_17b8f3f5"
+        },
+        {
+            "type": "java",
+            "name": "Teste",
+            "request": "launch",
+            "mainClass": "edu.walber.Teste",
+            "projectName": "DIO-BACKEND_17b8f3f5"
+        },
+        {
+            "type": "java",
+            "name": "ContaTerminal",
+            "request": "launch",
+            "mainClass": "edu.walber.ContaTerminal",
+            "projectName": "DIO-BACKEND_17b8f3f5"
+        },
+        {
+            "type": "java",
+            "name": "AboutMeScanner",
+            "request": "launch",
+            "mainClass": "AboutMeScanner",
+            "projectName": "DIO-BACKEND_17b8f3f5"
+        },
+        {
+            "type": "java",
+            "name": "ContaTerminal",
+            "request": "launch",
+            "mainClass": "ContaTerminal",
+            "projectName": "DIO-BACKEND_17b8f3f5"
+        },
+        {
+            "type": "java",
             "name": "AboutMeScanner",
             "request": "launch",
             "mainClass": "edu.walber.AboutMeScanner",
