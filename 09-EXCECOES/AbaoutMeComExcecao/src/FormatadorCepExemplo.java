@@ -5,7 +5,8 @@ public class FormatadorCepExemplo {
             // somente para ilustrar
             System.out.println(cepFormatado);
         } catch (CepInvalidoException e) {
-            e.printStackTrace();
+            System.out.println("O CEP não corresponde com as regras de negócio!");
+            
         }
     }
 
