@@ -1,5 +1,6 @@
 package edu.walber.candidatura;
 
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
@@ -7,7 +8,41 @@ public class ProcessoSeletivo {
         System.out.println("Processo seletivo:");
 
         //selecaoCandidatos();
-        imprimirSelecionados();
+        //imprimirSelecionados();
+        String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO"};
+        for (String candidato : candidatos) {
+            System.out.println("ligar para "+candidato);
+            entrandoEmContato(candidato);
+        }
+    }
+
+    static void entrandoEmContato(String candidato){
+        int tentativasRealizadas = 1;
+        boolean continuarTentando = true;
+        boolean atendeu = false;
+        do {
+            atendeu = atender();
+            continuarTentando = !atendeu;/* se atendeu for verdadeiro, continuar tentando 
+                                            vai tornar-se falso, e o inverso igualmente
+                                            */
+            if (continuarTentando) { // verifica true/false do 'continuarTentando'
+                tentativasRealizadas++;
+            } else {
+                System.out.println("CONTATO REALIZADO COM SUCESSO");
+            }
+
+        } while (continuarTentando && tentativasRealizadas < 3);
+        if (atendeu) {
+            System.out.println("CONSEGUIMOS CONTATO COM "+candidato+ " NA " + tentativasRealizadas + "ª TENTATIVA");
+        } else {
+            System.out.println("NÃO CONSEGUIMOS CONTATO COM "+candidato+", NÚMERO MAXIMO TENTATIVAS " + tentativasRealizadas + " REALIZADA");
+        }
+    }
+    // método auxiliar
+    static boolean atender(){
+        // busca randomica com 3 tentativas verificando se aguala a 1
+        return new Random().nextInt(3)==1;
+
     }
 
     static void imprimirSelecionados(){
