@@ -13,7 +13,8 @@ public class Contador {
     
         try {
             // chamar método com lógica de contagem
-            contar(parametroUm,parametroDois);
+            int iteracoes = contar(parametroUm,parametroDois);
+            imprimir(iteracoes);
         } catch (ParametrosInvalidosException e) {
             //imprimir a mensagem: O segundo parâmetro deve ser maior que o primeiro
             System.out.println("O segundo parâmetro deve ser maior que o primeiro");
@@ -21,10 +22,16 @@ public class Contador {
         }
     }
 
-    static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
+    static int contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
         if (parametroUm > parametroDois)
             throw new ParametrosInvalidosException();
         int contagem = parametroDois - parametroUm;
+        return contagem;
     }
     
+    static void imprimir(int iteracoes){
+        for (int index = 0; index < iteracoes; index++) {
+            System.out.println("Imprimindo o número "+(index+1));
+        }
+    }
 }
