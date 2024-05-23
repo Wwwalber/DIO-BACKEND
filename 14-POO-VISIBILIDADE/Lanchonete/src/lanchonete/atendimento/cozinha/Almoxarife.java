@@ -9,12 +9,13 @@ public class Almoxarife {
 		System.out.println("CONTROLANDO A SAIDA DOS ITENS");
 	}
 
-    public void trocarGas() {
+    // não é mais public, mas default já que nem todos precisam tomar conhecimento dessas ações
+    void trocarGas() {
         System.out.println("ENTREGANDO INGREDIENTES");
         throw new UnsupportedOperationException("Unimplemented method 'trocarGas'");
     }
 
-    public void entregarIngredientes() {
+    void entregarIngredientes() {
 		System.out.println("ALMOXARIFE TROCANDO O GÁS");
         throw new UnsupportedOperationException("Unimplemented method 'entregarIngredientes'");
     }
