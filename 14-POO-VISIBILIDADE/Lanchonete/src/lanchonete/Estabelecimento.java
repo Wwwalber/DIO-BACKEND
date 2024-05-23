@@ -26,9 +26,9 @@ public class Estabelecimento {
         almoxarife.controlarEntrada();
         almoxarife.controlarSaida();
 		//ação que somente o seu pacote cozinha precisa conhecer (default)
-        almoxarife.entregarIngredientes();/*esse método tornou-se visível somente no pacote 'cozinha'. 
-                Logo não será mais visível para o estabelecimento como um todo */
-        almoxarife.trocarGas();//esse método tornou-se visível somente no pacote 'cozinha'
+        //almoxarife.entregarIngredientes();/*esse método tornou-se visível somente no pacote 'cozinha'. 
+                //Logo não será mais visível para o estabelecimento como um todo */
+        //almoxarife.trocarGas();//esse método tornou-se visível somente no pacote 'cozinha'
 
         Atendente atendente = new Atendente();
         atendente.pegarLancheCozinha();
