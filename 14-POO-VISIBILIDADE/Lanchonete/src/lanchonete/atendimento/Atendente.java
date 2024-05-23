@@ -1,4 +1,4 @@
-package lanchonete;
+package lanchonete.atendimento;
 
 public class Atendente {
 
@@ -18,7 +18,7 @@ public class Atendente {
         System.out.println("ATENDENTE TROCANDO O GÁS");
         throw new UnsupportedOperationException("Unimplemented method 'trocarGas'");
     }
-    
+
     public void pegarPedidoBalcao() {
 		System.out.println("PEGANDO O PEDIDO NO BALCÃO");
 	}
