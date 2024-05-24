@@ -33,9 +33,7 @@ public class Estabelecimento {
         cliente.fazerPedido();
         cliente.pagarConta();
 
-		//esta ação é muito sigilosa, qua tal ser privada ?
-        cliente.consultarSaldoAplicativo();
-
+	
         //já pensou os clientes ouvindo que o gás acabou ?
         /* 
         cozinheiro.pedirParaTrocarGas(atendente);
