@@ -6,7 +6,7 @@ public class Atendente {
         System.out.println("SERVINDO A MESA");
     }
 
-    public void pegarLancheCozinha(){
+    private void pegarLancheCozinha(){
         System.out.println("PEGANDO O LANCHE NA COZINHA");
     }
 
