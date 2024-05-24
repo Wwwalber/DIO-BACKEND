@@ -30,7 +30,7 @@ public class Cozinheiro {
         prepararVitamina();
     }
 
-    public void selecionarIngredientesLanche() {
+    private void selecionarIngredientesLanche() {
 		System.out.println("SELECIONADO O PÃO, SALADA, OVO E CARNE");
 	}
 
@@ -46,7 +46,7 @@ public class Cozinheiro {
 		System.out.println("BATENDO VITAMINA NO LIQUIDIFICADOR");
 	}
 
-	public void fritarIngredientesLanche() {
+	private void fritarIngredientesLanche() {
 		System.out.println("FRITANDO A CARNE E OVO PARA O HAMBÚRGUER");
 	}
 
@@ -55,11 +55,11 @@ public class Cozinheiro {
         // *** O ZOZINHEIRO NÃO PODE PEDIR PARA O ATENDENTE TROCAR O GÁS ***
     }
 
-    public void pedirParaTrocarGas(Almoxarife meuAmigo){
+    private void pedirParaTrocarGas(Almoxarife meuAmigo){
         meuAmigo.trocarGas();
     }
 
-    public void pedirIngredientes(Almoxarife almoxarife){
+    private void pedirIngredientes(Almoxarife almoxarife){
         almoxarife.entregarIngredientes();
     }
 }
