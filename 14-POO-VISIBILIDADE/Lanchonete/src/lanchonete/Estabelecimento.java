@@ -10,7 +10,6 @@ public class Estabelecimento {
         Cozinheiro cozinheiro = new Cozinheiro();
         //ações que não precisam estarem disponíveis para toda a aplicação
         // métodos privados Estabelecimento não tem mais acesso
-        cozinheiro.lavarIngredientes(); // quando privado Estabelecimento não tem mais acesso
         cozinheiro.baterVitaminaLiquidificador();
         cozinheiro.prepararLanche();
         cozinheiro.prepararVitamina();
