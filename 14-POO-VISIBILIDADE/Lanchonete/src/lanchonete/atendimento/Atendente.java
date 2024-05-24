@@ -3,6 +3,7 @@ package lanchonete.atendimento;
 public class Atendente {
 
     public void servindoMesa(){
+        pegarLancheCozinha();
         System.out.println("SERVINDO A MESA");
     }
 
@@ -19,7 +20,7 @@ public class Atendente {
         throw new UnsupportedOperationException("Unimplemented method 'trocarGas'");
     }
 
-    public void pegarPedidoBalcao() {
+    private void pegarPedidoBalcao() {
 		System.out.println("PEGANDO O PEDIDO NO BALCÃO");
 	}
 
