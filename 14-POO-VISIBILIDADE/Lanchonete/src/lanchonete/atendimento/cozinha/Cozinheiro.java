@@ -50,7 +50,7 @@ public class Cozinheiro {
 		System.out.println("FRITANDO A CARNE E OVO PARA O HAMBÚRGUER");
 	}
 
-    public void pedirParaTrocarGas(Atendente meuAmigo){
+    private void pedirParaTrocarGas(Atendente meuAmigo){
         // meuAmigo.trocarGas();// mudando o acesso a esse método na classe Atendente, não tem mais como chamá-lo daqui
         // *** O ZOZINHEIRO NÃO PODE PEDIR PARA O ATENDENTE TROCAR O GÁS ***
     }
