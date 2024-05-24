@@ -38,7 +38,7 @@ public class Cozinheiro {
 		System.out.println("SELECIONADO FRUTA, LEITE E SUCO");
 	}
 
-	public void lavarIngredientes() {
+	private void lavarIngredientes() {
 		System.out.println("LAVANDO INGREDIENTES");
 	}
 
