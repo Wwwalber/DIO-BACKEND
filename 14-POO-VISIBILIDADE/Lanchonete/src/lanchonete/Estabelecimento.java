@@ -51,7 +51,9 @@ public class Estabelecimento {
         cliente.consultarSaldoAplicativo();
 
         //já pensou os clientes ouvindo que o gás acabou ?
+        /* 
         cozinheiro.pedirParaTrocarGas(atendente);
         cozinheiro.pedirParaTrocarGas(almoxarife);
+        */
     }
 }
