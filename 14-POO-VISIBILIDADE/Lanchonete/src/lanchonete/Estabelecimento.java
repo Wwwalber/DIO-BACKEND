@@ -20,8 +20,6 @@ public class Estabelecimento {
         cozinheiro.adicionarLancheNoBalcao();
         cozinheiro.adicionarComboNoBalcao();
 
-        Almoxarife almoxarife = new Almoxarife(); // não será mais usado 'diretamente',logo pode ser apagado
-
         Atendente atendente = new Atendente();
 
         atendente.receberPagamento();
