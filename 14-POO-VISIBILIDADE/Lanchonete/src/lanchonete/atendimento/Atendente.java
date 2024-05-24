@@ -14,7 +14,7 @@ public class Atendente {
 		System.out.println("RECEBENDO PAGAMENTO");
 	}
 
-    public void trocarGas() {
+    void trocarGas() {// mudança de public para default (sem anotação) para limitar o acesso
         System.out.println("ATENDENTE TROCANDO O GÁS");
         throw new UnsupportedOperationException("Unimplemented method 'trocarGas'");
     }

@@ -36,7 +36,8 @@ public class Estabelecimento {
         atendente.servindoMesa();
 
   		//ação que somente o seu pacote cozinha precisa conhecer (default)
-        atendente.trocarGas();
+        //atendente.trocarGas();  // acesso a este método foi limitado na classe 
+        // *** PEDIR PARA O ATENDENTE TROCAR O GÁS É UMA FUNCIONALIDADE LIMITADA ***
 
         Cliente cliente = new Cliente();
         cliente.escolherLanche();

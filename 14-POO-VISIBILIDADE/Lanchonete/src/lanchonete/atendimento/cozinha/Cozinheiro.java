@@ -51,7 +51,8 @@ public class Cozinheiro {
 	}
 
     public void pedirParaTrocarGas(Atendente meuAmigo){
-        meuAmigo.trocarGas();
+        // meuAmigo.trocarGas();// mudando o acesso a esse método na classe Atendente, não tem mais como chamá-lo daqui
+        // *** O ZOZINHEIRO NÃO PODE PEDIR PARA O ATENDENTE TROCAR O GÁS ***
     }
 
     public void pedirParaTrocarGas(Almoxarife meuAmigo){
