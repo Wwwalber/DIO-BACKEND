@@ -21,9 +21,8 @@ public class Estabelecimento {
         cozinheiro.adicionarComboNoBalcao();
 
         Atendente atendente = new Atendente();
-
-        atendente.receberPagamento();
         atendente.servindoMesa();
+        atendente.receberPagamento();
 
   		//ação que somente o seu pacote cozinha precisa conhecer (default)
         //atendente.trocarGas();  // acesso a este método foi limitado na classe 
@@ -33,10 +32,6 @@ public class Estabelecimento {
         cliente.escolherLanche();
         cliente.fazerPedido();
         cliente.pagarConta();
-
-        //não deveria, mas o estabelecimento
-		//ainda não definiu normas de atendimento
-		cliente.pegarPedidoBalcao();
 
 		//esta ação é muito sigilosa, qua tal ser privada ?
         cliente.consultarSaldoAplicativo();
