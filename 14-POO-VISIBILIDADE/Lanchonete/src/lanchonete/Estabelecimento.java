@@ -9,8 +9,7 @@ public class Estabelecimento {
     public static void main(String[] args) {
         Cozinheiro cozinheiro = new Cozinheiro();
         //ações que não precisam estarem disponíveis para toda a aplicação
-        // cozinheiro.selecionarIngredientesVitamina();// quando privado Estabelecimento não tem mais acesso
-        cozinheiro.lavarIngredientes();
+        cozinheiro.lavarIngredientes(); // quando privado Estabelecimento não tem mais acesso
         cozinheiro.baterVitaminaLiquidificador();
         cozinheiro.prepararLanche();
         cozinheiro.prepararVitamina();
