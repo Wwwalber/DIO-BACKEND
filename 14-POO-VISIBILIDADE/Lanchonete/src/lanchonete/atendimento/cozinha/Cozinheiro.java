@@ -38,11 +38,11 @@ public class Cozinheiro {
 		System.out.println("SELECIONADO FRUTA, LEITE E SUCO");
 	}
 
-	private void lavarIngredientes() {
+	private void lavarIngredientes() { // acesso agora somente na própria classe
 		System.out.println("LAVANDO INGREDIENTES");
 	}
 
-	public void baterVitaminaLiquidificador() {
+	private void baterVitaminaLiquidificador() {// acesso agora somente na própria classe
 		System.out.println("BATENDO VITAMINA NO LIQUIDIFICADOR");
 	}
 
