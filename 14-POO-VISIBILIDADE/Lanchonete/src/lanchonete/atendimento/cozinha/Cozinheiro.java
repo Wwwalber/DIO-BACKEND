@@ -16,11 +16,11 @@ public class Cozinheiro {
         adicionarSucoNoBalcao();
     }
 
-    public void prepararLanche(){
+    private void prepararLanche(){// acesso agora somente na própria classe
         System.out.println("PREPARANDO LANCHE TIPO HAMBÚRGUER");
     }
 
-    public void prepararVitamina(){
+    private void prepararVitamina(){// acesso agora somente na própria classe
         System.out.println("PREPARANDO VITAMINA");
 
     }
