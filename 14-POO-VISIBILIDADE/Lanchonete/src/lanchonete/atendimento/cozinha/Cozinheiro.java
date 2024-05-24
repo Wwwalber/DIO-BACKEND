@@ -34,7 +34,7 @@ public class Cozinheiro {
 		System.out.println("SELECIONADO O PÃO, SALADA, OVO E CARNE");
 	}
 
-	public void selecionarIngredientesVitamina() {
+	private void selecionarIngredientesVitamina() { // acesso agora somente na própria classe
 		System.out.println("SELECIONADO FRUTA, LEITE E SUCO");
 	}
 
