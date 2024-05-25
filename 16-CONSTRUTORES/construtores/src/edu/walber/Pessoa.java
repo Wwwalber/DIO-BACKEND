@@ -6,7 +6,7 @@ public class Pessoa {
 	private String endereco;
 
     public Pessoa(String cpf, String nome){
-        this.cpf = cpf;
+        this.cpf = cpf; // this informa que this.cpf é o da classe
         this.nome = nome;
     }
 
