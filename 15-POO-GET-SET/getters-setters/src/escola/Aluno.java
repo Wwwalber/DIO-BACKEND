@@ -4,6 +4,16 @@ package escola;
 public class Aluno {
 	String nome;
 	int idade;
+	private String sexo;
+
+	public String getSexo() {
+		return sexo;
+	}
+	
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
