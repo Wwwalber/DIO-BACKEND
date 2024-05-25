@@ -7,7 +7,7 @@ public enum EstadoBrasileiro {
     private String nome;
     private String sigla;
 
-    EstadoBrasileiro(String sigla, String nome) {
+    private EstadoBrasileiro(String sigla, String nome) {
         this.sigla = sigla;
         this.nome = nome;
     }
