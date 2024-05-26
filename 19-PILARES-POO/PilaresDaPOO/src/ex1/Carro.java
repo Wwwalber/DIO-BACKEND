@@ -3,8 +3,15 @@ package ex1;
 public class Carro {
 
     public void ligar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'ligar'");
+        System.out.println("CARRO LIGADO");
+    }
+
+    public void confereCombustivel(){
+        System.out.println("conferindo combustível");
+    }
+
+    public void confereCambio(){
+        System.out.println("conferindo cambio em P");
     }
 
 }
