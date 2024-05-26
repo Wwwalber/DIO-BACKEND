@@ -2,6 +2,7 @@ package estabelecimento;
 
 import equipamentos.copiadora.Copiadora;
 import equipamentos.digitalizadora.Digitalizadora;
+import equipamentos.digitalizadora.Scanner;
 import equipamentos.impressora.Deskjet;
 import equipamentos.impressora.Impressora;
 import equipamentos.impressora.LaseJet;
@@ -17,5 +18,8 @@ public class Fabrica {
         Copiadora copiadora = emf; copiadora.copiar();
         Digitalizadora digitalizadora = emf; digitalizadora.digitalizar();
         Impressora impressora2 = emf; impressora2.imprimir();
+
+        Scanner scanner = new Scanner();
+        scanner.digitalizar();
     }
 }
