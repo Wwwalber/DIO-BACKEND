@@ -1,14 +1,7 @@
 package exemplos;
 
-public class Moto {
-    private String chassi;
-
-    public String getChassi() {
-        return chassi;
+public class Moto extends Veiculo {
+    public void ligar() {
+        System.out.println("MOTO LIGADA");
     }
-
-    public void setChassi(String chassi) {
-        this.chassi = chassi;
-    }
-    
 }
