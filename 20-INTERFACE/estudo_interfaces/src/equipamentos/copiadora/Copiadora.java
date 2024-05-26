@@ -1,4 +1,4 @@
-package app;
+package equipamentos.copiadora;
 
 public class Copiadora {
     public void copiar(){

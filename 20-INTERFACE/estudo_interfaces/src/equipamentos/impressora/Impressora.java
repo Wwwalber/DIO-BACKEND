@@ -1,4 +1,4 @@
-package app;
+package equipamentos.impressora;
 
 public class Impressora {
     public void imprimir(){
