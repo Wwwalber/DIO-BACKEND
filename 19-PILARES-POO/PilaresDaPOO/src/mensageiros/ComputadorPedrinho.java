@@ -1,5 +1,10 @@
 package mensageiros;
 
+import mensageiros.apps.FacebookMessenger;
+import mensageiros.apps.MSNMessenger;
+import mensageiros.apps.ServicoMensagemInstantanea;
+import mensageiros.apps.Telegram;
+
 public class ComputadorPedrinho {
     public static void main(String[] args) {
         ServicoMensagemInstantanea smi = null;// mais a frente vamos saber qual classe vai ser usada

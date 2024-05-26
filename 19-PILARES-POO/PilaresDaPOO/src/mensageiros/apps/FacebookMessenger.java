@@ -1,4 +1,4 @@
-package mensageiros;
+package mensageiros.apps;
 
 public class FacebookMessenger extends ServicoMensagemInstantanea {
 	public void enviarMensagem() {

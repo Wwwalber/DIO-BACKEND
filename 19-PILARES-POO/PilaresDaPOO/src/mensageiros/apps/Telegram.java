@@ -1,4 +1,4 @@
-package mensageiros;
+package mensageiros.apps;
 
 public class Telegram extends ServicoMensagemInstantanea {
 	public void enviarMensagem() {

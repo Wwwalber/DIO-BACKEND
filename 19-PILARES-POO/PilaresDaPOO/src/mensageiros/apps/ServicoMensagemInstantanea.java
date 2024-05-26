@@ -1,4 +1,4 @@
-package mensageiros;
+package mensageiros.apps;
 // agora vou me abstrair e assim não entrar em detalhes de como vocês
 // irão implementar serviços de mensagem. Vou garantir que façam de alguma forma
 public abstract class ServicoMensagemInstantanea {
