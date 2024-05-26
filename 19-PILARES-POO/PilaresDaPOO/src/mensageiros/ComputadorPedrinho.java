@@ -2,22 +2,21 @@ package mensageiros;
 
 public class ComputadorPedrinho {
     public static void main(String[] args) {
-        System.out.println("- MSN -");
-        MSNMessenger msn = new MSNMessenger();
-        // implementado o encapsulamento o usuário não fica responsável por todos os passos
-        msn.enviarMensagem();
-        msn.receberMensagem();
+        ServicoMensagemInstantanea smi = null;// mais a frente vamos saber qual classe vai ser usada
+        /*
+		    NÃO SE SABE QUAL APP 
+		    MAS QUALQUER UM DEVERÁ ENVIAR E RECEBER MENSAGEM
+		 */
+        String appEscolhido ="tlg";
+        if (appEscolhido.equals("msn")) {
+            smi = new MSNMessenger();
+        } else if(appEscolhido.equals("fbm")){
+            smi = new FacebookMessenger();
+        }else if(appEscolhido.equals("tlg")){
+            smi = new Telegram();
+        }
 
-        System.out.println("- Facebook -");
-        FacebookMessenger fcm = new FacebookMessenger();
-        // implementado o encapsulamento o usuário não fica responsável por todos os passos
-        fcm.enviarMensagem();
-        fcm.receberMensagem();
-
-        System.out.println("- Telegram -");
-        Telegram tlg = new Telegram();
-        // implementado o encapsulamento o usuário não fica responsável por todos os passos
-        tlg.enviarMensagem();
-        tlg.receberMensagem();
+        smi.enviarMensagem();
+        smi.receberMensagem();
     }
 }
