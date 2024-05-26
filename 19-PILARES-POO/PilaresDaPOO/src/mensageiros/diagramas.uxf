@@ -1,9 +1,6 @@
-<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>210</x><y>253</y><w>253</w><h>110</h></coordinates><panel_attributes>MSNMessenger
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>187</x><y>253</y><w>253</w><h>44</h></coordinates><panel_attributes>MSNMessenger
 -
-+enviarMensagem(): viod
-+receberMensagem(): viod
--validarConectadoInternet(): viod
--salvarHistoricoMensagem(): viod</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>23</x><y>22</y><w>231</w><h>209</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>22</y><w>231</w><h>209</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
 Package::FatClass
 {Some Properties}
 --
@@ -15,14 +12,13 @@ _-ClassAttribute: Long_
 --
 Responsibilities
 -- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>485</x><y>253</y><w>253</w><h>110</h></coordinates><panel_attributes>FaceBookMessenger
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>253</y><w>253</w><h>44</h></coordinates><panel_attributes>FaceBookMessenger
+-
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>737</x><y>253</y><w>253</w><h>44</h></coordinates><panel_attributes>Telegram
+-
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>33</y><w>253</w><h>110</h></coordinates><panel_attributes>ServicoMensagemInstantanea
 -
 +enviarMensagem(): viod
 +receberMensagem(): viod
 -validarConectadoInternet(): viod
--salvarHistoricoMensagem(): viod</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>253</y><w>253</w><h>110</h></coordinates><panel_attributes>Telegram
--
-+enviarMensagem(): viod
-+receberMensagem(): viod
--validarConectadoInternet(): viod
--salvarHistoricoMensagem(): viod</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+-salvarHistoricoMensagem(): viod</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>132</y><w>242</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>200;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>572</x><y>132</y><w>33</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>638</x><y>132</y><w>253</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;210;110</additional_attributes></element></diagram>
