@@ -1,6 +1,6 @@
 package exemplos;
 
-public class Veiculo {
+public abstract class Veiculo {
     private String chassi;
 
     public String getChassi() {
@@ -10,4 +10,6 @@ public class Veiculo {
         this.chassi = chassi;
     }
 
+    // quem quiser ser um veículo precisará ter o método ligar()
+    public abstract void ligar();
 }
