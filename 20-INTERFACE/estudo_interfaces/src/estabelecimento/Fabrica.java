@@ -13,6 +13,7 @@ public class Fabrica {
         impressora.imprimir();
 
         EquipamentoMultifuncional emf = new EquipamentoMultifuncional();
+        // multifuncional pode agir com funcionalidades de Copiadora, Digitalizadora ou Impressora
         Copiadora copiadora = emf; copiadora.copiar();
         Digitalizadora digitalizadora = emf; digitalizadora.digitalizar();
         Impressora impressora2 = emf; impressora2.imprimir();
