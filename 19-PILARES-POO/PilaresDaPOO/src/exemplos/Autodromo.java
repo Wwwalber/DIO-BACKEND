@@ -13,5 +13,10 @@ public class Autodromo {
         Moto z400 = new Moto();
         z400.setChassi("854112");
         z400.ligar();
+
+        Veiculo coringa = jeep;
+        Veiculo coringa2 = z400;
+        coringa.ligar();
+        coringa2.ligar();
     }
 }
