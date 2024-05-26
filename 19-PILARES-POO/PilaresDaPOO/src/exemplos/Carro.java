@@ -1,6 +1,8 @@
-package ex1;
+package exemplos;
 
 public class Carro {
+
+    private String chassi;
 
     public void ligar() {
         confereCambio();
@@ -8,6 +10,13 @@ public class Carro {
         System.out.println("CARRO LIGADO");
     }
 
+    public String getChassi() {
+        return chassi;
+    }
+    public void setChassi(String chassi) {
+        this.chassi = chassi;
+    }
+    
     private void confereCombustivel(){
         System.out.println("conferindo combustível");
     }

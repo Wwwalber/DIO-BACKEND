@@ -1,4 +1,4 @@
-package ex1;
+package exemplos;
 
 public class Autodromo {
     public static void main(String[] args) {
@@ -7,6 +7,10 @@ public class Autodromo {
         jeep.confereCambio();
         jeep.confereCombustivel();
         */
+        jeep.setChassi("8987554");
         jeep.ligar();
+
+        Moto z400 = new Moto();
+        z400.setChassi("854112");
     }
 }
