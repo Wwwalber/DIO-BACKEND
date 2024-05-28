@@ -22,7 +22,7 @@ Responsibilities
 + ligar(numero: String)
 + atender:void
 + iniciarCorreioVoz()
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>480</y><w>230</w><h>80</h></coordinates><panel_attributes>NavegadorNaInternet
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>480</y><w>230</w><h>80</h></coordinates><panel_attributes>NavegadorInternet
 --
 --
 + exibirPagina(url: String)
