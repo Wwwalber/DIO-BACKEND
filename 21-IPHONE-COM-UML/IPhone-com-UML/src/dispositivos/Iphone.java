@@ -14,7 +14,7 @@ public class Iphone implements AparelhoTelefonico, NavegadorInternet, Reprodutor
 
     @Override
     public String ligar(String numero) {
-        System.out.println("Ligando do iPhone ...");
+        System.out.println("Ligando para o número "+numero+" ...");
         return "ligou";
     }
 
