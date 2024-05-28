@@ -1,8 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>140</x><y>330</y><w>180</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
-Impressora
--
--
-+imprimir: void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>90</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
 Package::FatClass
 {Some Properties}
 --
@@ -14,12 +10,22 @@ _-ClassAttribute: Long_
 --
 Responsibilities
 -- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>330</y><w>180</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
-Copiadora
--
--
-+imprimir: void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>330</y><w>180</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
-Digitalizadora
--
--
-+imprimir: void</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>240</y><w>230</w><h>80</h></coordinates><panel_attributes>ReprodutorMusical
+--
+--
++ tocar():void
++ pausar():void
++ selecionarMusica(musica: String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>360</y><w>230</w><h>80</h></coordinates><panel_attributes>AparelhoTelefonico
+--
+--
++ ligar(numero: String)
++ atender:void
++ iniciarCorreioVoz()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>480</y><w>230</w><h>80</h></coordinates><panel_attributes>NavegadorNaInternet
+--
+--
++ exibirPagina(url: String)
++ adicionarNovaAba():void
++ atualizarPagina()
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
