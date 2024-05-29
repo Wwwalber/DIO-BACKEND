@@ -29,5 +29,33 @@ public class Main {
                                 livro.getAno());
         }
         System.out.println("-------------------------------");
+        // livros após ordenação por ano
+        System.out.println("Livros após ordenação por ano");
+        Collections.sort(livros, new CompararAno());
+
+        for (Livro livro : livros) {
+            System.out.println(livro.getAno()+" - "+
+                                livro.getTitulo()+" - "+
+                                livro.getAutor());
+        }
+
+        System.out.println("Livros após a ordenação por autor: ");
+        System.out.println("---------------------------------------");
+        Collections.sort(livros, new CompararAutor());
+        for (Livro livro : livros) {
+            System.out.println(livro.getAutor()+" - "+
+                                livro.getTitulo()+" - "+
+                                livro.getAno());
+        }
+
+        System.out.println("---------------------------------------");
+
+		System.out.println("Livros após a ordenação por ano, autor e título: ");
+		Collections.sort(livros, new CompararAnoAutorTitulo());
+        for (Livro livro : livros) {
+			System.out.println(livro.getAno() + " - " +
+					livro.getAutor() + " - " +
+					livro.getTitulo());        
+                }
     }
 }
