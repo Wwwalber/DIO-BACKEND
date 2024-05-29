@@ -3,7 +3,7 @@ package generics.comparableXcomparator;
 import java.util.Comparator;
 
 // implementando Comparable
-public class Livro implements Comparable<Livro>{
+class Livro implements Comparable<Livro>{
     private String titulo;
     private String autor;
     private int ano;
@@ -25,6 +25,12 @@ public class Livro implements Comparable<Livro>{
 
     public int getAno() {
         return ano;
+    }
+
+    // Usado para ordenar livros por ano
+    @Override
+    public int compareTo(Livro l) {
+        return titulo.compareTo(l.titulo);
     }
 
 }
@@ -52,7 +58,7 @@ class CompararAno implements Comparator<Livro> {
 
     @Override
     public int compare(Livro l1, Livro l2) {
-        int ano = Integer.compare(l1.getAno(), l2.getAno())
+        int ano = Integer.compare(l1.getAno(), l2.getAno());
         if (ano != 0) {
             return ano;
         }
