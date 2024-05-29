@@ -14,5 +14,16 @@ public class GenericsExempleSet {
         for (String string : conjuntoGeneric) {
             System.out.println(string);
         }
+
+        // sem generic
+        Set conjuntoSemGeneric = new HashSet();
+        conjuntoSemGeneric.add("elemento 1");
+        conjuntoSemGeneric.add(10);
+
+        // iterando (necessário cast)
+        for (Object object : conjuntoSemGeneric) {
+            String str = (String) object;
+            System.out.println(str);
+        }
     }
 }
