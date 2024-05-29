@@ -1,31 +1,25 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
-Package::FatClass
-{Some Properties}
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>240</y><w>230</w><h>80</h></coordinates><panel_attributes>ReprodutorMusical
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>96</x><y>246</y><w>252</w><h>96</h></coordinates><panel_attributes>ReprodutorMusical
 --
 --
 + tocar():void
 + pausar():void
 + selecionarMusica(musica: String)
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>360</y><w>230</w><h>80</h></coordinates><panel_attributes>AparelhoTelefonico
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>246</y><w>192</w><h>96</h></coordinates><panel_attributes>AparelhoTelefonico
 --
 --
 + ligar(numero: String)
 + atender:void
 + iniciarCorreioVoz()
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>480</y><w>230</w><h>80</h></coordinates><panel_attributes>NavegadorInternet
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>564</x><y>246</y><w>204</w><h>96</h></coordinates><panel_attributes>NavegadorInternet
 --
 --
 + exibirPagina(url: String)
 + adicionarNovaAba():void
 + atualizarPagina()
-</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>54</y><w>204</w><h>96</h></coordinates><panel_attributes>NavegadorInternet
+--
+--
++ exibirPagina(url: String)
++ adicionarNovaAba():void
++ atualizarPagina()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>138</y><w>216</w><h>132</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;90;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>444</x><y>138</y><w>36</w><h>132</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>468</x><y>138</y><w>228</w><h>132</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>170;90;10;10</additional_attributes></element></diagram>

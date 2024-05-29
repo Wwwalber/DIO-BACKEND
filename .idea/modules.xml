@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-SINTAXE-JAVA/01-SINTAXE-JAVA.iml" filepath="$PROJECT_DIR$/01-SINTAXE-JAVA/01-SINTAXE-JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-TIPOS-E-VARIAVIES/02-TIPOS-E-VARIAVIES.iml" filepath="$PROJECT_DIR$/02-TIPOS-E-VARIAVIES/02-TIPOS-E-VARIAVIES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-METODOS/03-METODOS.iml" filepath="$PROJECT_DIR$/03-METODOS/03-METODOS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-JAVA DOC/04-JAVA DOC.iml" filepath="$PROJECT_DIR$/04-JAVA DOC/04-JAVA DOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-TERMIN-ARGUM/05-TERMIN-ARGUM.iml" filepath="$PROJECT_DIR$/05-TERMIN-ARGUM/05-TERMIN-ARGUM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-DESAFIOS/06-DESAFIOS.iml" filepath="$PROJECT_DIR$/06-DESAFIOS/06-DESAFIOS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-CONDICIONAIS/07-CONDICIONAIS.iml" filepath="$PROJECT_DIR$/07-CONDICIONAIS/07-CONDICIONAIS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08-ESTRUT-REPETICAO/08-ESTRUT-REPETICAO.iml" filepath="$PROJECT_DIR$/08-ESTRUT-REPETICAO/08-ESTRUT-REPETICAO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09-EXCECOES/09-EXCECOES.iml" filepath="$PROJECT_DIR$/09-EXCECOES/09-EXCECOES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-DEBUGGING/10-DEBUGGING.iml" filepath="$PROJECT_DIR$/10-DEBUGGING/10-DEBUGGING.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11-VALIDACAO-PSELETIVO/11-VALIDACAO-PSELETIVO.iml" filepath="$PROJECT_DIR$/11-VALIDACAO-PSELETIVO/11-VALIDACAO-PSELETIVO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12-DESAFIO-CONTROLE/12-DESAFIO-CONTROLE.iml" filepath="$PROJECT_DIR$/12-DESAFIO-CONTROLE/12-DESAFIO-CONTROLE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13-LOOP-EXCECOES/13-LOOP-EXCECOES.iml" filepath="$PROJECT_DIR$/13-LOOP-EXCECOES/13-LOOP-EXCECOES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14-POO-VISIBILIDADE/14-POO-VISIBILIDADE.iml" filepath="$PROJECT_DIR$/14-POO-VISIBILIDADE/14-POO-VISIBILIDADE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15-POO-GET-SET/15-POO-GET-SET.iml" filepath="$PROJECT_DIR$/15-POO-GET-SET/15-POO-GET-SET.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16-CONSTRUTORES/16-CONSTRUTORES.iml" filepath="$PROJECT_DIR$/16-CONSTRUTORES/16-CONSTRUTORES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17-ENUMS/17-ENUMS.iml" filepath="$PROJECT_DIR$/17-ENUMS/17-ENUMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19-PILARES-POO/19-PILARES-POO.iml" filepath="$PROJECT_DIR$/19-PILARES-POO/19-PILARES-POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20-INTERFACE/20-INTERFACE.iml" filepath="$PROJECT_DIR$/20-INTERFACE/20-INTERFACE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/21-IPHONE-COM-UML/21-IPHONE-COM-UML.iml" filepath="$PROJECT_DIR$/21-IPHONE-COM-UML/21-IPHONE-COM-UML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DIO-BACKEND.iml" filepath="$PROJECT_DIR$/.idea/DIO-BACKEND.iml" />
+    </modules>
+  </component>
+</project>
