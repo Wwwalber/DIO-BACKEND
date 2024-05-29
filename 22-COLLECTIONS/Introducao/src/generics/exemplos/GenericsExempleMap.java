@@ -18,5 +18,17 @@ public static void main(String[] args) {
         Object valor = entrada.getValue();
         System.out.println("Chave: " + chave + ", Valor: " + valor);
     }
+
+    // exemplo com generic
+    Map<String, Integer> mapaGenerics = new HashMap<>();
+    mapaGenerics.put("Chave 1", 10);
+    mapaGenerics.put("Chave 2", 20);
+
+    // iterando com geberics
+    for (Map.Entry<String, Integer> entrada : mapaGenerics.entrySet()) {
+        String chave = entrada.getKey();
+        int valor = entrada.getValue();
+        System.out.println("Chave: " + chave + ", Valor: " + valor);
+    }
 }
 }
