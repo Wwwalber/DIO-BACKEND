@@ -16,7 +16,7 @@ public class CarrinhoDeCompras {
 
     public void removerItem(String nomeDoItem){
         List<Item> itensParaRemover = new ArrayList<>();
-        for (Item item : itensParaRemover) {
+        for (Item item : itensDaLista) {
             if (item.getNome().equalsIgnoreCase(nomeDoItem)) {
                 // preenche com todos os que serão removidos
                 itensParaRemover.add(item);
@@ -28,9 +28,10 @@ public class CarrinhoDeCompras {
     public double calcularValorTotal(){
         double valorCarrinho = 0;
         for (Item item : itensDaLista) {
-            valorCarrinho = valorCarrinho + item.getPreco();
+            valorCarrinho = valorCarrinho + (item.getPreco()*item.getQuantidade());
         }
-        return itensDaLista.size() * valorCarrinho;
+        //return itensDaLista.size() * valorCarrinho;
+        return  valorCarrinho;
     }
 
     public void exibirItens(){
