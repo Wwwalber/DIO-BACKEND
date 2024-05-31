@@ -1,6 +1,7 @@
 package list.somanumeros;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SomaNumeros {
@@ -27,8 +28,26 @@ public class SomaNumeros {
         return valorSoma;
     }
 
-    //public void encontrarMaiorNumero()
-    //encontrarMenorNumero()
+    public int encontrarMaiorNumero(){
+        List<Integer> listadeinteiros = new ArrayList<>();
+        if (!numerosDaLista.isEmpty()) {
+            for (Numero numero : numerosDaLista) {
+                listadeinteiros.add(numero.getNumero());
+            }
+        } 
+        return Collections.max(listadeinteiros);
+    }
+    
+    public int encontrarMenorNumero(){
+        List<Integer> listadeinteiros = new ArrayList<>();
+        if (!numerosDaLista.isEmpty()) {
+            for (Numero numero : numerosDaLista) {
+                listadeinteiros.add(numero.getNumero());
+            }
+        } 
+        return Collections.min(listadeinteiros);
+    }
+
     public void exibirNumeros(){
         if (!numerosDaLista.isEmpty()) {
             System.out.println(numerosDaLista);
