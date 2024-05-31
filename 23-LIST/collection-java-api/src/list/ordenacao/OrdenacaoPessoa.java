@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class OrdenacaoPessoa {
-    private List<Pessoa> pessoaList;
+    protected List<Pessoa> pessoaList;
 
     public OrdenacaoPessoa() {
         this.pessoaList = new ArrayList<>();
@@ -19,8 +19,14 @@ public class OrdenacaoPessoa {
                           // compiando a lista para o ArraiList
         List<Pessoa> pessoasPorIdade = new ArrayList<>(pessoaList);
         Collections.sort(pessoasPorIdade); // já sabe como fazer pois implementei o método quando implementamos Comparable
+                    // se não passar o Comparable, por padrão será usado o comparable
         return pessoasPorIdade;
     }
 
-    // ordenarPorAltura()
+    public List<Pessoa> ordenarPorAltura(){
+        List<Pessoa> pessoasPorAltura = new ArrayList<>(pessoaList);
+                    // passando o Comparable, sobrescreve o padrão então
+        Collections.sort(pessoasPorAltura, new ComparatorPorAltura());
+        return pessoasPorAltura;
+    }
 }
