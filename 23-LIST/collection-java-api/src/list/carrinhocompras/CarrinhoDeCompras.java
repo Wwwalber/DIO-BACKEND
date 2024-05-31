@@ -51,5 +51,10 @@ public class CarrinhoDeCompras {
         }
     }
 
+    @Override
+    public String toString() {
+        return "CarrinhoDeCompras [itensDaLista=" + itensDaLista + "]";
+    }
+
     
 }
