@@ -3,9 +3,9 @@ package list.Pesquisa;
 public class Livro {
     private String titulo;
     private String autor;
-    private String anoPublicacao;
+    private int anoPublicacao;
     
-    public Livro(String titulo, String autor, String anoPublicacao) {
+    public Livro(String titulo, String autor, int anoPublicacao) {
         this.titulo = titulo;
         this.autor = autor;
         this.anoPublicacao = anoPublicacao;
@@ -19,7 +19,7 @@ public class Livro {
         return autor;
     }
 
-    public String getAnoPublicacao() {
+    public int getAnoPublicacao() {
         return anoPublicacao;
     }
 
