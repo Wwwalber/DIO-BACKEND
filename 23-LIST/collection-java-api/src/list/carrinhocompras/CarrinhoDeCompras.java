@@ -11,18 +11,23 @@ public class CarrinhoDeCompras {
     }
 
     public void adicionarItem(String nome, double preco, int quantidade){
-        itensDaLista.add(new Item(nome, preco, quantidade));
+        Item item = new Item(nome, preco, quantidade);
+        itensDaLista.add(item);
     }
 
     public void removerItem(String nomeDoItem){
         List<Item> itensParaRemover = new ArrayList<>();
-        for (Item item : itensDaLista) {
-            if (item.getNome().equalsIgnoreCase(nomeDoItem)) {
-                // preenche com todos os que serão removidos
-                itensParaRemover.add(item);
-            }
-        } // após preencher todos os itens
-        itensDaLista.removeAll(itensParaRemover);
+        if (!itensDaLista.isEmpty()) {
+            for (Item item : itensDaLista) {
+                if (item.getNome().equalsIgnoreCase(nomeDoItem)) {
+                    // preenche com todos os que serão removidos
+                    itensParaRemover.add(item);
+                }
+            } // após preencher todos os itens
+            itensDaLista.removeAll(itensParaRemover);
+        } else {
+            System.out.println("A lista está vazia!");
+        }
     }
 
     public double calcularValorTotal(){
