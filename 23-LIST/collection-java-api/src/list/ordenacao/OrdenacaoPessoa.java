@@ -18,15 +18,25 @@ public class OrdenacaoPessoa {
     public List<Pessoa> ordenarPorIdade(){
                           // compiando a lista para o ArraiList
         List<Pessoa> pessoasPorIdade = new ArrayList<>(pessoaList);
-        Collections.sort(pessoasPorIdade); // já sabe como fazer pois implementei o método quando implementamos Comparable
-                    // se não passar o Comparable, por padrão será usado o comparable
-        return pessoasPorIdade;
+        if (!pessoaList.isEmpty()) {
+            Collections.sort(pessoasPorIdade); // já sabe como fazer pois implementei o método quando implementamos Comparable
+            // se não passar o Comparable, por padrão será usado o comparable
+            return pessoasPorIdade;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
+        }
+
     }
 
     public List<Pessoa> ordenarPorAltura(){
         List<Pessoa> pessoasPorAltura = new ArrayList<>(pessoaList);
-                    // passando o Comparable, sobrescreve o padrão então
-        Collections.sort(pessoasPorAltura, new ComparatorPorAltura());
-        return pessoasPorAltura;
+        if (!pessoaList.isEmpty()) {
+                                // passando o Comparable, sobrescreve o padrão então
+            Collections.sort(pessoasPorAltura, new ComparatorPorAltura());
+            return pessoasPorAltura;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
+        }
+
     }
 }
