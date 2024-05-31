@@ -32,14 +32,24 @@ public class CarrinhoDeCompras {
 
     public double calcularValorTotal(){
         double valorCarrinho = 0;
-        for (Item item : itensDaLista) {
-            valorCarrinho = valorCarrinho + (item.getPreco()*item.getQuantidade());
+        if (!itensDaLista.isEmpty()) {
+            for (Item item : itensDaLista) {
+                valorCarrinho = valorCarrinho + (item.getPreco()*item.getQuantidade());
+            }
+            //return itensDaLista.size() * valorCarrinho;
+            return  valorCarrinho;
+        } else {
+            throw new RuntimeException("A lista está vazia!");
         }
-        //return itensDaLista.size() * valorCarrinho;
-        return  valorCarrinho;
     }
 
     public void exibirItens(){
-        System.out.println(itensDaLista);
+        if (!itensDaLista.isEmpty()) {
+            System.out.println(itensDaLista);
+        } else {
+            System.out.println("A lista está vazia!");
+        }
     }
+
+    
 }
