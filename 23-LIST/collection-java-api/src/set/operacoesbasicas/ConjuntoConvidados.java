@@ -10,25 +10,38 @@ public class ConjuntoConvidados {
         this.convidadoSet = new HashSet<>();
     }
 
-    private void adicionarConvidado(String nome, int codigoConvite){
+    public void adicionarConvidado(String nome, int codigoConvite){
         convidadoSet.add(new Convidado(nome, codigoConvite));
     }
 
-    private void removerConvidadoPorCodigoConvite(int codigoConvite){
+    public void removerConvidadoPorCodigoConvite(int codigoConvite){
         Convidado convidadoParaRemover = null;
-        for (Convidado convidado : convidadoSet) {
-            if (convidado.getCodigoConvite() == codigoConvite) {
-                convidadoParaRemover = convidado;
-                //acho o convidado então encerra o laço
-                break;
-            }else{
-                System.out.println("Não existe candidato com o código  "+convidadoParaRemover.getCodigoConvite());
+        if (!convidadoSet.isEmpty()) {
+            for (Convidado convidado : convidadoSet) {
+                if (convidado.getCodigoConvite() == codigoConvite) {
+                    convidadoParaRemover = convidado;
+                    //acho o convidado então encerra o laço
+                    break;
+                }else{
+                    System.out.println("Não existe candidato com o código  "+convidadoParaRemover.getCodigoConvite());
+                }
             }
-        }
-        convidadoSet.remove(convidadoParaRemover);
+            convidadoSet.remove(convidadoParaRemover);
+        } else {
+            throw new RuntimeException("O conjunto está vazio!");
+        }    
+            
     }
 
-    // contarConvidados()
+    public int contarConvidados(){
+        return convidadoSet.size();
+    }
 
-    // exibirConvidados()
+    public void exibirConvidados(){
+        if (!convidadoSet.isEmpty()) {
+            System.out.println(convidadoSet);
+        } else {
+            System.out.println("O conjunto está vazio");
+        }
+    }
 }
