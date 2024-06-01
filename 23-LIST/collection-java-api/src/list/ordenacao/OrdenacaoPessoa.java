@@ -19,7 +19,8 @@ public class OrdenacaoPessoa {
                           // compiando a lista para o ArraiList
         List<Pessoa> pessoasPorIdade = new ArrayList<>(pessoaList);
         if (!pessoaList.isEmpty()) {
-            Collections.sort(pessoasPorIdade); // já sabe como fazer pois implementei o método quando implementamos Comparable
+            Collections.sort(pessoasPorIdade); // já sabe como fazer pois 
+            // implementei o método quando implementamos Comparable
             // se não passar o Comparable, por padrão será usado o comparable
             return pessoasPorIdade;
         } else {
