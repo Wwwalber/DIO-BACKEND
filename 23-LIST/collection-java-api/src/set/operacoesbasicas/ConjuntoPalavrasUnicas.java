@@ -21,12 +21,24 @@ public class ConjuntoPalavrasUnicas {
             System.out.println("O conjunto está vazio");
         }
     }
-    /*
-     * 
-     * removerPalavra(String palavra)
-     * verificarPalavra(String palavra)
-     * exibirPalavrasUnicas()
-     */
+
+    public void removerPalavra(String palavra){
+        palavraSet.remove(palavra);
+    }
+    
+    public void verificarPalavra(String palavra){
+        boolean encontrada = false;
+        for (String p : palavraSet) {
+            if (p.equals(palavra)) {
+                System.out.println("Palavra '"+palavra+"' encontrada");
+                encontrada = true;
+                break;
+            }
+        }
+        if (!encontrada) {
+            System.out.println("Não existe a palavra procurada");
+        }
+    }
 
     @Override
     public String toString() {
