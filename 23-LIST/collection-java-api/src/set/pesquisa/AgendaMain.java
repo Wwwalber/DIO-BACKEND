@@ -2,7 +2,7 @@ package set.pesquisa;
 
 public class AgendaMain {
     public static void main(String[] args) {
-        AgendaContatos agendaContatos = new AgdaContatos();
+        AgendaContatos agendaContatos = new AgendaContatos();
 
         agendaContatos.exibirContatos();
 
