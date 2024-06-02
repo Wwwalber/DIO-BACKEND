@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class CadastroProduto {
-    private Set<Produto> produtoSet;
+    public Set<Produto> produtoSet;
 
     public CadastroProduto() {
         this.produtoSet = new HashSet<>();
@@ -26,7 +26,7 @@ public class CadastroProduto {
 
     public Set<Produto> exibirProdutosPorPreco(){
         Set<Produto> produtosPorPreco = new TreeSet<>(new ComparatorPorPreco());
-        produtoSet.addAll(produtoSet);
+        produtosPorPreco.addAll(produtoSet);
         return produtosPorPreco;
     }
 

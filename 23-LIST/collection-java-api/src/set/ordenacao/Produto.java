@@ -36,7 +36,7 @@ public class Produto implements Comparable<Produto> {
 
     @Override
     public String toString() {
-        return "Produto [codigo=" + codigo + ", nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + "]";
+        return "Produto: codigo=" + codigo + ", nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + '\n';
     }
 
     @Override
@@ -63,7 +63,7 @@ public class Produto implements Comparable<Produto> {
 
     @Override
     public int compareTo(Produto produto) {
-        return nome.compareToIgnoreCase(getNome());
+        return nome.compareToIgnoreCase(produto.getNome());
     }
 
 }
