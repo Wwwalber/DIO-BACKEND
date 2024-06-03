@@ -21,7 +21,12 @@ public class AgendaEventos {
     // como queremos ordenar usaremos aqui o TreeMap
     public void exibirAgenda(){
         Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(eventosMap);
-        System.out.println(eventosTreeMap);
+        for (Map.Entry<LocalDate, Evento> entry : eventosTreeMap.entrySet()) {
+            LocalDate data = entry.getKey();
+            Evento evento = entry.getValue();
+            System.out.println(data+ " > " +evento);
+        }
+        //System.out.println(eventosTreeMap);
     }
 
     public void obterProximoEvento(){
@@ -35,7 +40,7 @@ public class AgendaEventos {
     
         // abaixo tenho os eventos ordenados
         Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(eventosMap);//ordenou com TreeMap
-        for (Map.Entry<LocalDate, Evento> entry : eventosMap.entrySet()) { 
+        for (Map.Entry<LocalDate, Evento> entry : eventosTreeMap.entrySet()) { 
           // pode usar 'var' vs Map.Entry      // o método 'entrySet' consigo retorna um Set com a ligação chave valo (K,V)
             if (entry.getKey().isEqual(dataAtual) || entry.getKey().isAfter(dataAtual)) {
                 System.out.println("O próximo evento: "+ entry.getValue()+
@@ -49,7 +54,7 @@ public class AgendaEventos {
         LocalDate proximaData = null;
         Evento proximoEvento = null;
         Map<LocalDate,Evento> eventosTreeMap = new TreeMap<>(eventosMap);
-        for (Map.Entry<LocalDate,Evento> entry : eventosMap.entrySet()) {
+        for (Map.Entry<LocalDate,Evento> entry : eventosTreeMap.entrySet()) {
             if (entry.getKey().isEqual(dataAtual) || entry.getKey().isAfter(dataAtual)) {
                 proximaData = entry.getKey();
                 proximoEvento = entry.getValue();
