@@ -9,6 +9,11 @@ public class Main {
         lista.adicionarTarefa("Estudar para prova");
         lista.adicionarTarefa("Fazer compras");
         lista.adicionarTarefa("Limpar a casa");
+        lista.adicionarTarefa("Dar banho no cachorro");
+        lista.adicionarTarefa("Fazer o café");
+        lista.adicionarTarefa("Pagar contas");
+        lista.adicionarTarefa("Lavar os pratos");
+        lista.adicionarTarefa("Cortar a grama");
 
         // Teste exibirTarefas
         System.out.println("Todas as Tarefas:");
@@ -19,10 +24,16 @@ public class Main {
 
         // Teste marcarTarefaConcluida
         lista.marcarTarefaConcluida("Estudar para prova");
+        lista.marcarTarefaConcluida("Lavar os pratos");
+        lista.marcarTarefaConcluida("Fazer o café");
+
         System.out.println("\nTarefas Concluídas:");
         for (Tarefa tarefa : lista.obterTarefasConcluidas()) {
             System.out.println(tarefa);
         }
+        System.out.println("\n------------");
+        System.out.println(lista.obterTarefasConcluidas());
+        System.out.println("\n------------");
 
         // Teste obterTarefasPendentes
         System.out.println("\nTarefas Pendentes:");
