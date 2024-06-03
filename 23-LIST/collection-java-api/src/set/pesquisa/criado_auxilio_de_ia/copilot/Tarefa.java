@@ -1,4 +1,4 @@
-package set.pesquisa.criado_auxilio_de_ia;
+package set.pesquisa.criado_auxilio_de_ia.copilot;
 
 public class Tarefa {
     private String descricao;

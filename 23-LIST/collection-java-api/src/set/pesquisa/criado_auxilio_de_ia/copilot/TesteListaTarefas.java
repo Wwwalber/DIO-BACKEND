@@ -1,4 +1,4 @@
-package set.pesquisa.criado_auxilio_de_ia;
+package set.pesquisa.criado_auxilio_de_ia.copilot;
 
 public class TesteListaTarefas {
     public static void main(String[] args) {
