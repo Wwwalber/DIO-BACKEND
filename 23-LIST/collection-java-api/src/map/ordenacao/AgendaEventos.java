@@ -43,7 +43,7 @@ public class AgendaEventos {
         for (Map.Entry<LocalDate, Evento> entry : eventosTreeMap.entrySet()) { 
           // pode usar 'var' vs Map.Entry      // o método 'entrySet' consigo retorna um Set com a ligação chave valo (K,V)
             if (entry.getKey().isEqual(dataAtual) || entry.getKey().isAfter(dataAtual)) {
-                System.out.println("O próximo evento: "+ entry.getValue()+
+                System.out.println("\nO próximo evento: "+ entry.getValue()+
                 " acontecerá na data "+entry.getKey());
                 break;
             }    
