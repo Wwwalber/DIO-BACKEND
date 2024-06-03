@@ -12,6 +12,7 @@ public class AgendaContatos {
     
     public void adicionarContato(String nome, Integer telefone){
         agendaContatoMap.put(nome, telefone);
+        // serve para atualizar, remover e colocar o novo
     }
 
     public void removerContato(String nome){
