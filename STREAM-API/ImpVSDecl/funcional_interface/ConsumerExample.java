@@ -8,25 +8,40 @@ public class ConsumerExample {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5);
 
         // Usar o Consumer com expressão lambda para imprimir múmeros pares
+        // esse exemplo foi criado fora
         Consumer<Integer> imprimirNumeroPar = numero -> {
+                              // lambda >> argumento -> corpo
             if(numero % 2 == 0){ // verifica se é par
                 System.out.print(numero+" ");
             }
         };
         // Usar o consumer para imprimir números pares
         numeros.stream().forEach(imprimirNumeroPar); 
+
         // transformando a lista 'numeros' em um stream
-        System.out.println("\n------------");
+        System.out.println("\n----- 2ª implementação -------");
         // segundo uso, mais prático
         numeros.stream().forEach(new Consumer<Integer>(){
-
             @Override
             public void accept(Integer num) {
                 if (num % 2 == 0) {
                     System.out.print(num+" ");
                 }
-            }
-            
+            }            
         });
+
+        System.out.println("\n----- 3ª implementação -------");
+        numeros.forEach(num -> {
+                if (num % 2 == 0) {
+                    System.out.print(num+" ");
+                }
+            }            
+        );
+
+        List<String> palavras = Arrays.asList("banana", "gatos", "abacaxi", "cachorro", "computador", "floresta", "amarelo", "piano", "ventilador", "bicicleta", "chocolate", "oceano", "televisão", "espelho", "morango", "avião", "livro", "futebol", "lápis", "janela", "girafa", "viagem", "relógio", "sorvete", "papagaio", "montanha", "telefone", "piscina", "dinossauro", "sanduíche", "pôr do sol", "escola", "coelho", "violão", "fogo", "hamburguer", "estrela", "música", "pintura", "praia", "bola", "cama", "arco-íris", "borboleta", "chave", "sapato", "lua");
+
+        // Usando Stream API para imprimir as palavras
+        palavras.forEach(System.out::println);
+
     }
 }
