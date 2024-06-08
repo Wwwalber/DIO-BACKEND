@@ -1,3 +1,5 @@
+
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
@@ -18,7 +20,7 @@ public class ConsumerExample {
         System.out.println("\n----- 1ª implementação -------");
 
         // Usar o consumer para imprimir números pares
-        numeros.stream().forEach(imprimirNumeroPar); 
+        numeros.stream().forEach(imprimirNumeroPar); // transforma em um stream para usar
 
         // transformando a lista 'numeros' em um stream
         System.out.println("\n----- 2ª implementação -------");
