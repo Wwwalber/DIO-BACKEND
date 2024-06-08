@@ -10,9 +10,9 @@ public class ConsumerExample2 {
                 "avião", "livro", "futebol", "lápis", "janela", "girafa", "viagem", "relógio", "sorvete", "papagaio",
                 "montanha", "telefone", "piscina", "dinossauro", "sanduíche", "pôr do sol", "escola", "coelho",
                 "violão", "fogo", "hamburguer", "estrela", "música", "pintura", "praia", "bola", "cama", "arco-íris",
-                "boi", "faca", "pipoca", "cadeira");
+                "boi", "faca", "cadela", "sapo");
 
-        palavras.stream().forEach(pal -> {
+        palavras.forEach(pal -> {
                 System.out.println(pal);
             }    
         );
