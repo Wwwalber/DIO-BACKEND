@@ -10,17 +10,12 @@ public class ConsumerExample2 {
                 "avião", "livro", "futebol", "lápis", "janela", "girafa", "viagem", "relógio", "sorvete", "papagaio",
                 "montanha", "telefone", "piscina", "dinossauro", "sanduíche", "pôr do sol", "escola", "coelho",
                 "violão", "fogo", "hamburguer", "estrela", "música", "pintura", "praia", "bola", "cama", "arco-íris",
-                "borboleta", "chave", "cadarço", "gelo");
-        Consumer<String> imprimeLista = palavra -> {
-            System.out.println(palavra);
-        };
+                "boi", "faca", "pipoca", "cadeira");
 
-        palavras.stream().forEach(new Consumer<String>() {
-            @Override
-            public void accept(String pal) {
+        palavras.stream().forEach(pal -> {
                 System.out.println(pal);
             }    
-        });
+        );
 
     }
 }
