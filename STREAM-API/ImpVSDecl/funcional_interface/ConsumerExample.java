@@ -15,6 +15,8 @@ public class ConsumerExample {
                 System.out.print(numero+" ");
             }
         };
+        System.out.println("\n----- 1ª implementação -------");
+
         // Usar o consumer para imprimir números pares
         numeros.stream().forEach(imprimirNumeroPar); 
 
@@ -37,11 +39,5 @@ public class ConsumerExample {
                 }
             }            
         );
-
-        List<String> palavras = Arrays.asList("banana", "gatos", "abacaxi", "cachorro", "computador", "floresta", "amarelo", "piano", "ventilador", "bicicleta", "chocolate", "oceano", "televisão", "espelho", "morango", "avião", "livro", "futebol", "lápis", "janela", "girafa", "viagem", "relógio", "sorvete", "papagaio", "montanha", "telefone", "piscina", "dinossauro", "sanduíche", "pôr do sol", "escola", "coelho", "violão", "fogo", "hamburguer", "estrela", "música", "pintura", "praia", "bola", "cama", "arco-íris", "borboleta", "chave", "sapato", "lua");
-
-        // Usando Stream API para imprimir as palavras
-        palavras.forEach(System.out::println);
-
     }
 }
