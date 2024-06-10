@@ -14,6 +14,6 @@ public class SupplierExample {
             .limit(5).toList();
 
         // imprime as saudações geradas
-        listaSaudacoes.forEach(lis -> System.out.println(lis));
+        listaSaudacoes.forEach(System.out::println);
     }
 }
