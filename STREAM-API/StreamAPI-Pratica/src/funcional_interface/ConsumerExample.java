@@ -41,5 +41,7 @@ public class ConsumerExample {
                 }
             }            
         );
+        System.out.println("\n----- 4ª implementação -------");
+        numeros.stream().filter(n -> n % 2 == 0).forEach(System.out::println);
     }
 }
