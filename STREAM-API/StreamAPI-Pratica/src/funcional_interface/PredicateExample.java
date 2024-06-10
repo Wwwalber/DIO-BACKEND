@@ -12,7 +12,7 @@ public class PredicateExample {
             palavra que passou no filtro  */
             palavras.stream().filter(maisDeCincoCaracteres).forEach(System.out::println);
 
-            System.out.println("-----------");
+                    System.out.println("-----------");
             /* e caso eu não saiba implementar o Predicate */
             palavras.stream().filter(new Predicate<String>() {
                 @Override
@@ -20,5 +20,10 @@ public class PredicateExample {
                 return t.length() > 5;
                 }         
             }).forEach(System.out::println);
+
+                    System.out.println("----------");
+            /* somente com o lambda !*/
+            palavras.stream().filter(t -> t.length() > 5).forEach(System.out::println);
+
     }
 }
