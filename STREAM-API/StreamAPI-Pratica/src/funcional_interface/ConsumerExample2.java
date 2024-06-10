@@ -1,7 +1,5 @@
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
-
 
 public class ConsumerExample2 {
     public static void main(String[] args) {
@@ -12,10 +10,7 @@ public class ConsumerExample2 {
                 "violão", "fogo", "hamburguer", "estrela", "música", "pintura", "praia", "bola", "cama", "arco-íris",
                 "boi", "faca", "cadela", "sapo");
 
-        palavras.forEach(pal -> {
-                System.out.println(pal);
-            }    
-        );
+        palavras.forEach(System.out::println);
 
     }
 }
