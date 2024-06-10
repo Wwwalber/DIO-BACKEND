@@ -19,6 +19,8 @@ public class CarrinhoMain {
         carrinhoDeCompras.exibirItens();
         System.out.println("O valor total dos itens no carrinho é: "+
             carrinhoDeCompras.calcularValorTotal());
+            System.out.println("-- uso de Stream API ---");
+            carrinhoDeCompras.calcularValorTotalImperativamente();
         
         carrinhoDeCompras.removerItem("banana");
         carrinhoDeCompras.removerItem("leite");

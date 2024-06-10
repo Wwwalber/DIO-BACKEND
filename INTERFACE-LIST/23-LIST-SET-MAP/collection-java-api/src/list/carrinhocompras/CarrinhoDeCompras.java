@@ -43,6 +43,15 @@ public class CarrinhoDeCompras {
         }
     }
 
+    public double calcularValorTotalImperativamente(){
+        if (itensDaLista.isEmpty()) {
+            throw new RuntimeException("A lista está vazia!");
+        } else {
+            return itensDaLista.stream().mapToDouble(item -> item.getPreco() * item.getQuantidade())
+                .sum();
+        }
+    }
+
     public void exibirItens(){
         if (!itensDaLista.isEmpty()) {
             System.out.println(itensDaLista);
