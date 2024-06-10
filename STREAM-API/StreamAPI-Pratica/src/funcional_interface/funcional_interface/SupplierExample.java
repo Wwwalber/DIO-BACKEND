@@ -6,11 +6,10 @@ import java.util.stream.Stream;
 
 public class SupplierExample {
     public static void main(String[] args) {
-        // Usar o Supplier com expressão lambda para fornecer uma saudação personalizada
-        Supplier <String> saudacao = () -> "Olá! Seja bem vindo!";
 
         // Usar o Supplier para obter uma lista com 5 saudações
-        List<String> listaSaudacoes = Stream.generate(saudacao)
+        List<String> listaSaudacoes = Stream.generate(
+            () ->  "Olá! Seja bem vindo!")               
             .limit(5).toList();
 
         // imprime as saudações geradas
